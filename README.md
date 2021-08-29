@@ -1,6 +1,6 @@
 # developer-site.react
 
-This app is a developer-style react website with a simple UI that displays blog entries from a database, and fetches the most recent Github projects of a user to display them. It also has a secured admin panel to facilitate adding/editing blog entries.
+This app is a blogging react website with a simple UI that displays blog entries from a database. It also has a secured admin panel to facilitate adding/editing blog entries.
 
 ## Tech Stack
 
@@ -12,7 +12,6 @@ This app is a developer-style react website with a simple UI that displays blog 
 Libraries and other key features:
 - jsonwebtoken (authentication)
 - bcrypt (encryption)
-- Github's REST API (fetching user projects)
 - dotenv (storing sensitive user data locally)
 - axios (make requests to backend server)
 - react-router-dom (for routing to the pages)
@@ -37,9 +36,7 @@ PGPORT=5432
 
 // Your admin credentials for managing the blog, you choose these.
 CUSER=your_username
-CPASSWORD=x21awev432
-
-GITUSER=alex-more   // Your github username 
+CPASSWORD=your_password
 
 // Secrets used to authenticate the user on login page.
 // You can basically put any password you want here, ideally generate long sequences using bcrypt.
